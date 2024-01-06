@@ -1,0 +1,945 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B083B960C157B3A4FFC5E55 /* Pods_InvoiceBot_InvoiceBotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB04D5AA4335736041CB01 /* Pods_InvoiceBot_InvoiceBotUITests.framework */; };
+		0C6BE25EF5A7F076DBD8C0ED /* Pods_InvoiceBotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A672CB0806F75D1ACDE3C1 /* Pods_InvoiceBotTests.framework */; };
+		311DD8202B40797200D651CE /* FetchableCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DD81F2B40797200D651CE /* FetchableCache.swift */; };
+		311DD8222B42018900D651CE /* invoice.html in Resources */ = {isa = PBXBuildFile; fileRef = 311DD8212B42018900D651CE /* invoice.html */; };
+		311DD8242B4210B500D651CE /* InvoiceHtmlFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DD8232B4210B500D651CE /* InvoiceHtmlFormatter.swift */; };
+		311DD8262B42284400D651CE /* InvoicePdfViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DD8252B42284400D651CE /* InvoicePdfViewModel.swift */; };
+		311DD8282B44949800D651CE /* EmailUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DD8272B44949800D651CE /* EmailUtilities.swift */; };
+		311DD82A2B44989B00D651CE /* EmailUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DD8292B44989B00D651CE /* EmailUtilitiesTests.swift */; };
+		312FC3D12ADC84840084C625 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312FC3D02ADC84840084C625 /* WebView.swift */; };
+		312FC3DB2ADC8BD30084C625 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312FC3DA2ADC8BD30084C625 /* FileManagerExtensions.swift */; };
+		313BCD992B36E11400AAC22A /* NumberFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BCD982B36E11400AAC22A /* NumberFormatterExtensions.swift */; };
+		313BCD9B2B36EB7100AAC22A /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BCD9A2B36EB7100AAC22A /* Form.swift */; };
+		3140E0852B2864DC0073687B /* GenericDataFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3140E0842B2864DC0073687B /* GenericDataFetcherTests.swift */; };
+		314924F42B25F59A00EC3111 /* InvoiceFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314924F32B25F59A00EC3111 /* InvoiceFormViewModel.swift */; };
+		314924F62B25FD9400EC3111 /* Fetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314924F52B25FD9400EC3111 /* Fetchable.swift */; };
+		314924F82B270CA600EC3111 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314924F72B270CA600EC3111 /* ExtensionsTests.swift */; };
+		314924FA2B270E7C00EC3111 /* CancellableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314924F92B270E7C00EC3111 /* CancellableViewModel.swift */; };
+		315EAE172AD3EEBE00011663 /* line_1_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 315EAE162AD3EEBE00011663 /* line_1_0.png */; };
+		3178A38E2B24B27100EC0AEE /* InvoiceFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3178A38D2B24B27100EC0AEE /* InvoiceFormView.swift */; };
+		3178A3902B24B3EE00EC0AEE /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3178A38F2B24B3EE00EC0AEE /* LoginViewModelTests.swift */; };
+		3180781A2B3097E4001D0AEC /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318078192B3097E4001D0AEC /* ViewExtensions.swift */; };
+		3180781C2B309E88001D0AEC /* InvoiceDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180781B2B309E88001D0AEC /* InvoiceDTO.swift */; };
+		3180781E2B309F3C001D0AEC /* MSGraphHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180781D2B309F3C001D0AEC /* MSGraphHttpClient.swift */; };
+		318142F22B2252C400541B35 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318142F12B2252C400541B35 /* HttpClient.swift */; };
+		318142F42B225C8200541B35 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318142F32B225C8200541B35 /* Storage.swift */; };
+		318142F82B2269BB00541B35 /* MSAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318142F72B2269BB00541B35 /* MSAuth.swift */; };
+		318142FB2B22710100541B35 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 318142FA2B22710100541B35 /* Config.plist */; };
+		318142FD2B2271A500541B35 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318142FC2B2271A500541B35 /* Config.swift */; };
+		3197EC882B3E2C8E0040E9D6 /* NavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3197EC872B3E2C8E0040E9D6 /* NavigationStack.swift */; };
+		3197EC8A2B3E35890040E9D6 /* InvoicePdfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3197EC892B3E35890040E9D6 /* InvoicePdfView.swift */; };
+		3197EC8D2B3E3CE20040E9D6 /* ReplaySubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3197EC8C2B3E3CE20040E9D6 /* ReplaySubject.swift */; };
+		31B5941F2B3641A8005C38CB /* ValidatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B5941E2B3641A8005C38CB /* ValidatingTextField.swift */; };
+		31B594262B364C7E005C38CB /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B594252B364C7E005C38CB /* FormValidator.swift */; };
+		31CAA75A2B31982800987137 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CAA7592B31982800987137 /* ServiceManagement.framework */; };
+		31CAA75C2B323ED700987137 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CAA75B2B323ED700987137 /* DateExtensions.swift */; };
+		31CAA75E2B323F8F00987137 /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CAA75D2B323F8F00987137 /* DateExtensionsTests.swift */; };
+		31D6A4782B19C51800858F29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A4772B19C51800858F29 /* LoginView.swift */; };
+		31D6A47A2B19C52300858F29 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A4792B19C52300858F29 /* LoginViewModel.swift */; };
+		31FDE6482AC8D23600FBEF4E /* InvoiceBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FDE6472AC8D23600FBEF4E /* InvoiceBotApp.swift */; };
+		31FDE64A2AC8D23600FBEF4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FDE6492AC8D23600FBEF4E /* ContentView.swift */; };
+		31FDE64C2AC8D23800FBEF4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31FDE64B2AC8D23800FBEF4E /* Assets.xcassets */; };
+		31FDE64F2AC8D23800FBEF4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31FDE64E2AC8D23800FBEF4E /* Preview Assets.xcassets */; };
+		31FDE6642AC8D23800FBEF4E /* InvoiceBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FDE6632AC8D23800FBEF4E /* InvoiceBotUITests.swift */; };
+		31FDE6662AC8D23800FBEF4E /* InvoiceBotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FDE6652AC8D23800FBEF4E /* InvoiceBotUITestsLaunchTests.swift */; };
+		4E00C8AC8E261E3A4E9D73E2 /* Pods_InvoiceBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253393D97879E3C63B260C67 /* Pods_InvoiceBot.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31FDE6562AC8D23800FBEF4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31FDE63C2AC8D23600FBEF4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31FDE6432AC8D23600FBEF4E;
+			remoteInfo = InvoiceBot;
+		};
+		31FDE6602AC8D23800FBEF4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31FDE63C2AC8D23600FBEF4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31FDE6432AC8D23600FBEF4E;
+			remoteInfo = InvoiceBot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		253393D97879E3C63B260C67 /* Pods_InvoiceBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoiceBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		311DD81F2B40797200D651CE /* FetchableCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchableCache.swift; sourceTree = "<group>"; };
+		311DD8212B42018900D651CE /* invoice.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = invoice.html; sourceTree = "<group>"; };
+		311DD8232B4210B500D651CE /* InvoiceHtmlFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceHtmlFormatter.swift; sourceTree = "<group>"; };
+		311DD8252B42284400D651CE /* InvoicePdfViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicePdfViewModel.swift; sourceTree = "<group>"; };
+		311DD8272B44949800D651CE /* EmailUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUtilities.swift; sourceTree = "<group>"; };
+		311DD8292B44989B00D651CE /* EmailUtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUtilitiesTests.swift; sourceTree = "<group>"; };
+		312FC3D02ADC84840084C625 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		312FC3DA2ADC8BD30084C625 /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
+		313BCD982B36E11400AAC22A /* NumberFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatterExtensions.swift; sourceTree = "<group>"; };
+		313BCD9A2B36EB7100AAC22A /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		3140E0842B2864DC0073687B /* GenericDataFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataFetcherTests.swift; sourceTree = "<group>"; };
+		314924F32B25F59A00EC3111 /* InvoiceFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceFormViewModel.swift; sourceTree = "<group>"; };
+		314924F52B25FD9400EC3111 /* Fetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetchable.swift; sourceTree = "<group>"; };
+		314924F72B270CA600EC3111 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
+		314924F92B270E7C00EC3111 /* CancellableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellableViewModel.swift; sourceTree = "<group>"; };
+		315EAE162AD3EEBE00011663 /* line_1_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_1_0.png; sourceTree = "<group>"; };
+		3178A38D2B24B27100EC0AEE /* InvoiceFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceFormView.swift; sourceTree = "<group>"; };
+		3178A38F2B24B3EE00EC0AEE /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		318078192B3097E4001D0AEC /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		3180781B2B309E88001D0AEC /* InvoiceDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceDTO.swift; sourceTree = "<group>"; };
+		3180781D2B309F3C001D0AEC /* MSGraphHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSGraphHttpClient.swift; sourceTree = "<group>"; };
+		318142F12B2252C400541B35 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		318142F32B225C8200541B35 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		318142F72B2269BB00541B35 /* MSAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAuth.swift; sourceTree = "<group>"; };
+		318142FA2B22710100541B35 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		318142FC2B2271A500541B35 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		3197EC872B3E2C8E0040E9D6 /* NavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStack.swift; sourceTree = "<group>"; };
+		3197EC892B3E35890040E9D6 /* InvoicePdfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicePdfView.swift; sourceTree = "<group>"; };
+		3197EC8C2B3E3CE20040E9D6 /* ReplaySubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaySubject.swift; sourceTree = "<group>"; };
+		31B5941E2B3641A8005C38CB /* ValidatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatingTextField.swift; sourceTree = "<group>"; };
+		31B594252B364C7E005C38CB /* FormValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
+		31CAA7592B31982800987137 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		31CAA75B2B323ED700987137 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		31CAA75D2B323F8F00987137 /* DateExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionsTests.swift; sourceTree = "<group>"; };
+		31D6A4752B18E90C00858F29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		31D6A4772B19C51800858F29 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		31D6A4792B19C52300858F29 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		31D6A47B2B19D18500858F29 /* InvoiceBotDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvoiceBotDebug.entitlements; sourceTree = "<group>"; };
+		31FDE6442AC8D23600FBEF4E /* InvoiceBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvoiceBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FDE6472AC8D23600FBEF4E /* InvoiceBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceBotApp.swift; sourceTree = "<group>"; };
+		31FDE6492AC8D23600FBEF4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		31FDE64B2AC8D23800FBEF4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31FDE64E2AC8D23800FBEF4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31FDE6502AC8D23800FBEF4E /* InvoiceBot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvoiceBot.entitlements; sourceTree = "<group>"; };
+		31FDE6552AC8D23800FBEF4E /* InvoiceBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvoiceBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FDE65F2AC8D23800FBEF4E /* InvoiceBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvoiceBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FDE6632AC8D23800FBEF4E /* InvoiceBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceBotUITests.swift; sourceTree = "<group>"; };
+		31FDE6652AC8D23800FBEF4E /* InvoiceBotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceBotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		781183EDA5205CE3B584E5D0 /* Pods-InvoiceBotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoiceBotTests.debug.xcconfig"; path = "Target Support Files/Pods-InvoiceBotTests/Pods-InvoiceBotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		82BD38AD6E23F6BDD4CE73CE /* Pods-InvoiceBot-InvoiceBotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoiceBot-InvoiceBotUITests.release.xcconfig"; path = "Target Support Files/Pods-InvoiceBot-InvoiceBotUITests/Pods-InvoiceBot-InvoiceBotUITests.release.xcconfig"; sourceTree = "<group>"; };
+		82FAC8C00E92E9291EF35BA6 /* Pods-InvoiceBotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoiceBotTests.release.xcconfig"; path = "Target Support Files/Pods-InvoiceBotTests/Pods-InvoiceBotTests.release.xcconfig"; sourceTree = "<group>"; };
+		8AD93C34236B564265189410 /* Pods-InvoiceBot-InvoiceBotUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoiceBot-InvoiceBotUITests.debug.xcconfig"; path = "Target Support Files/Pods-InvoiceBot-InvoiceBotUITests/Pods-InvoiceBot-InvoiceBotUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		95AB04D5AA4335736041CB01 /* Pods_InvoiceBot_InvoiceBotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoiceBot_InvoiceBotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A672CB0806F75D1ACDE3C1 /* Pods_InvoiceBotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoiceBotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8CE73C9E6692479D63BC39A /* Pods-InvoiceBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoiceBot.release.xcconfig"; path = "Target Support Files/Pods-InvoiceBot/Pods-InvoiceBot.release.xcconfig"; sourceTree = "<group>"; };
+		FC5D7FDF543F8B379D98CEE7 /* Pods-InvoiceBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoiceBot.debug.xcconfig"; path = "Target Support Files/Pods-InvoiceBot/Pods-InvoiceBot.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31FDE6412AC8D23600FBEF4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31CAA75A2B31982800987137 /* ServiceManagement.framework in Frameworks */,
+				4E00C8AC8E261E3A4E9D73E2 /* Pods_InvoiceBot.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31FDE6522AC8D23800FBEF4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6BE25EF5A7F076DBD8C0ED /* Pods_InvoiceBotTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31FDE65C2AC8D23800FBEF4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B083B960C157B3A4FFC5E55 /* Pods_InvoiceBot_InvoiceBotUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0127F6BBC8661CD9BF12F008 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31CAA7592B31982800987137 /* ServiceManagement.framework */,
+				253393D97879E3C63B260C67 /* Pods_InvoiceBot.framework */,
+				95AB04D5AA4335736041CB01 /* Pods_InvoiceBot_InvoiceBotUITests.framework */,
+				A4A672CB0806F75D1ACDE3C1 /* Pods_InvoiceBotTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		312FC3CD2ADC84650084C625 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				312FC3D02ADC84840084C625 /* WebView.swift */,
+				31B5941E2B3641A8005C38CB /* ValidatingTextField.swift */,
+				31B594252B364C7E005C38CB /* FormValidator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		312FC3D72ADC8B1B0084C625 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				312FC3DA2ADC8BD30084C625 /* FileManagerExtensions.swift */,
+				318078192B3097E4001D0AEC /* ViewExtensions.swift */,
+				31CAA75B2B323ED700987137 /* DateExtensions.swift */,
+				313BCD982B36E11400AAC22A /* NumberFormatterExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		312FC3DC2ADC8F660084C625 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				318142F32B225C8200541B35 /* Storage.swift */,
+				318142F72B2269BB00541B35 /* MSAuth.swift */,
+				318142FC2B2271A500541B35 /* Config.swift */,
+				314924F52B25FD9400EC3111 /* Fetchable.swift */,
+				314924F92B270E7C00EC3111 /* CancellableViewModel.swift */,
+				313BCD9A2B36EB7100AAC22A /* Form.swift */,
+				3197EC8C2B3E3CE20040E9D6 /* ReplaySubject.swift */,
+				311DD81F2B40797200D651CE /* FetchableCache.swift */,
+				311DD8272B44949800D651CE /* EmailUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3178A38C2B24B25200EC0AEE /* Invoice */ = {
+			isa = PBXGroup;
+			children = (
+				311DD8212B42018900D651CE /* invoice.html */,
+				3178A38D2B24B27100EC0AEE /* InvoiceFormView.swift */,
+				314924F32B25F59A00EC3111 /* InvoiceFormViewModel.swift */,
+				3180781B2B309E88001D0AEC /* InvoiceDTO.swift */,
+				3197EC892B3E35890040E9D6 /* InvoicePdfView.swift */,
+				311DD8232B4210B500D651CE /* InvoiceHtmlFormatter.swift */,
+				311DD8252B42284400D651CE /* InvoicePdfViewModel.swift */,
+			);
+			path = Invoice;
+			sourceTree = "<group>";
+		};
+		318142F02B2252B600541B35 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				318142F12B2252C400541B35 /* HttpClient.swift */,
+				3180781D2B309F3C001D0AEC /* MSGraphHttpClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3197EC862B3E2C7F0040E9D6 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				3197EC872B3E2C8E0040E9D6 /* NavigationStack.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		3197EC8B2B3E366E0040E9D6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				315EAE162AD3EEBE00011663 /* line_1_0.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		31D6A4762B19C50000858F29 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				31D6A4772B19C51800858F29 /* LoginView.swift */,
+				31D6A4792B19C52300858F29 /* LoginViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		31FDE63B2AC8D23600FBEF4E = {
+			isa = PBXGroup;
+			children = (
+				31FDE6462AC8D23600FBEF4E /* InvoiceBot */,
+				31FDE6582AC8D23800FBEF4E /* InvoiceBotTests */,
+				31FDE6622AC8D23800FBEF4E /* InvoiceBotUITests */,
+				31FDE6452AC8D23600FBEF4E /* Products */,
+				C09FCE9BED6A9B0D281518B9 /* Pods */,
+				0127F6BBC8661CD9BF12F008 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		31FDE6452AC8D23600FBEF4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31FDE6442AC8D23600FBEF4E /* InvoiceBot.app */,
+				31FDE6552AC8D23800FBEF4E /* InvoiceBotTests.xctest */,
+				31FDE65F2AC8D23800FBEF4E /* InvoiceBotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31FDE6462AC8D23600FBEF4E /* InvoiceBot */ = {
+			isa = PBXGroup;
+			children = (
+				3197EC8B2B3E366E0040E9D6 /* Assets */,
+				3197EC862B3E2C7F0040E9D6 /* Navigation */,
+				3178A38C2B24B25200EC0AEE /* Invoice */,
+				318142F02B2252B600541B35 /* Networking */,
+				31D6A47B2B19D18500858F29 /* InvoiceBotDebug.entitlements */,
+				31D6A4762B19C50000858F29 /* Auth */,
+				31D6A4752B18E90C00858F29 /* Info.plist */,
+				312FC3DC2ADC8F660084C625 /* Utilities */,
+				312FC3D72ADC8B1B0084C625 /* Extensions */,
+				312FC3CD2ADC84650084C625 /* Views */,
+				31FDE6472AC8D23600FBEF4E /* InvoiceBotApp.swift */,
+				31FDE6492AC8D23600FBEF4E /* ContentView.swift */,
+				31FDE64B2AC8D23800FBEF4E /* Assets.xcassets */,
+				31FDE6502AC8D23800FBEF4E /* InvoiceBot.entitlements */,
+				31FDE64D2AC8D23800FBEF4E /* Preview Content */,
+				318142FA2B22710100541B35 /* Config.plist */,
+			);
+			path = InvoiceBot;
+			sourceTree = "<group>";
+		};
+		31FDE64D2AC8D23800FBEF4E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				31FDE64E2AC8D23800FBEF4E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31FDE6582AC8D23800FBEF4E /* InvoiceBotTests */ = {
+			isa = PBXGroup;
+			children = (
+				3178A38F2B24B3EE00EC0AEE /* LoginViewModelTests.swift */,
+				314924F72B270CA600EC3111 /* ExtensionsTests.swift */,
+				3140E0842B2864DC0073687B /* GenericDataFetcherTests.swift */,
+				31CAA75D2B323F8F00987137 /* DateExtensionsTests.swift */,
+				311DD8292B44989B00D651CE /* EmailUtilitiesTests.swift */,
+			);
+			path = InvoiceBotTests;
+			sourceTree = "<group>";
+		};
+		31FDE6622AC8D23800FBEF4E /* InvoiceBotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				31FDE6632AC8D23800FBEF4E /* InvoiceBotUITests.swift */,
+				31FDE6652AC8D23800FBEF4E /* InvoiceBotUITestsLaunchTests.swift */,
+			);
+			path = InvoiceBotUITests;
+			sourceTree = "<group>";
+		};
+		C09FCE9BED6A9B0D281518B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC5D7FDF543F8B379D98CEE7 /* Pods-InvoiceBot.debug.xcconfig */,
+				A8CE73C9E6692479D63BC39A /* Pods-InvoiceBot.release.xcconfig */,
+				8AD93C34236B564265189410 /* Pods-InvoiceBot-InvoiceBotUITests.debug.xcconfig */,
+				82BD38AD6E23F6BDD4CE73CE /* Pods-InvoiceBot-InvoiceBotUITests.release.xcconfig */,
+				781183EDA5205CE3B584E5D0 /* Pods-InvoiceBotTests.debug.xcconfig */,
+				82FAC8C00E92E9291EF35BA6 /* Pods-InvoiceBotTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31FDE6432AC8D23600FBEF4E /* InvoiceBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31FDE6692AC8D23800FBEF4E /* Build configuration list for PBXNativeTarget "InvoiceBot" */;
+			buildPhases = (
+				405B4D16C2BB3C26795AE8E6 /* [CP] Check Pods Manifest.lock */,
+				31FDE6402AC8D23600FBEF4E /* Sources */,
+				31FDE6412AC8D23600FBEF4E /* Frameworks */,
+				31FDE6422AC8D23600FBEF4E /* Resources */,
+				3AC0DFFBB35A457EA5B98E02 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InvoiceBot;
+			productName = InvoiceBot;
+			productReference = 31FDE6442AC8D23600FBEF4E /* InvoiceBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31FDE6542AC8D23800FBEF4E /* InvoiceBotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31FDE66C2AC8D23800FBEF4E /* Build configuration list for PBXNativeTarget "InvoiceBotTests" */;
+			buildPhases = (
+				4B9C025C5BE64D144F8473D2 /* [CP] Check Pods Manifest.lock */,
+				31FDE6512AC8D23800FBEF4E /* Sources */,
+				31FDE6522AC8D23800FBEF4E /* Frameworks */,
+				31FDE6532AC8D23800FBEF4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31FDE6572AC8D23800FBEF4E /* PBXTargetDependency */,
+			);
+			name = InvoiceBotTests;
+			productName = InvoiceBotTests;
+			productReference = 31FDE6552AC8D23800FBEF4E /* InvoiceBotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		31FDE65E2AC8D23800FBEF4E /* InvoiceBotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31FDE66F2AC8D23800FBEF4E /* Build configuration list for PBXNativeTarget "InvoiceBotUITests" */;
+			buildPhases = (
+				5286CA6FC5C10D4A44243187 /* [CP] Check Pods Manifest.lock */,
+				31FDE65B2AC8D23800FBEF4E /* Sources */,
+				31FDE65C2AC8D23800FBEF4E /* Frameworks */,
+				31FDE65D2AC8D23800FBEF4E /* Resources */,
+				866A864D8B4A42716FAE28C1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31FDE6612AC8D23800FBEF4E /* PBXTargetDependency */,
+			);
+			name = InvoiceBotUITests;
+			productName = InvoiceBotUITests;
+			productReference = 31FDE65F2AC8D23800FBEF4E /* InvoiceBotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31FDE63C2AC8D23600FBEF4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					31FDE6432AC8D23600FBEF4E = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					31FDE6542AC8D23800FBEF4E = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 31FDE6432AC8D23600FBEF4E;
+					};
+					31FDE65E2AC8D23800FBEF4E = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 31FDE6432AC8D23600FBEF4E;
+					};
+				};
+			};
+			buildConfigurationList = 31FDE63F2AC8D23600FBEF4E /* Build configuration list for PBXProject "InvoiceBot" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31FDE63B2AC8D23600FBEF4E;
+			productRefGroup = 31FDE6452AC8D23600FBEF4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31FDE6432AC8D23600FBEF4E /* InvoiceBot */,
+				31FDE6542AC8D23800FBEF4E /* InvoiceBotTests */,
+				31FDE65E2AC8D23800FBEF4E /* InvoiceBotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31FDE6422AC8D23600FBEF4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318142FB2B22710100541B35 /* Config.plist in Resources */,
+				31FDE64F2AC8D23800FBEF4E /* Preview Assets.xcassets in Resources */,
+				31FDE64C2AC8D23800FBEF4E /* Assets.xcassets in Resources */,
+				311DD8222B42018900D651CE /* invoice.html in Resources */,
+				315EAE172AD3EEBE00011663 /* line_1_0.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31FDE6532AC8D23800FBEF4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31FDE65D2AC8D23800FBEF4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AC0DFFBB35A457EA5B98E02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvoiceBot/Pods-InvoiceBot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvoiceBot/Pods-InvoiceBot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InvoiceBot/Pods-InvoiceBot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		405B4D16C2BB3C26795AE8E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvoiceBot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B9C025C5BE64D144F8473D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvoiceBotTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5286CA6FC5C10D4A44243187 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvoiceBot-InvoiceBotUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		866A864D8B4A42716FAE28C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvoiceBot-InvoiceBotUITests/Pods-InvoiceBot-InvoiceBotUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvoiceBot-InvoiceBotUITests/Pods-InvoiceBot-InvoiceBotUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InvoiceBot-InvoiceBotUITests/Pods-InvoiceBot-InvoiceBotUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31FDE6402AC8D23600FBEF4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318142F22B2252C400541B35 /* HttpClient.swift in Sources */,
+				318142F42B225C8200541B35 /* Storage.swift in Sources */,
+				314924F42B25F59A00EC3111 /* InvoiceFormViewModel.swift in Sources */,
+				318142FD2B2271A500541B35 /* Config.swift in Sources */,
+				3180781A2B3097E4001D0AEC /* ViewExtensions.swift in Sources */,
+				312FC3DB2ADC8BD30084C625 /* FileManagerExtensions.swift in Sources */,
+				313BCD9B2B36EB7100AAC22A /* Form.swift in Sources */,
+				3180781E2B309F3C001D0AEC /* MSGraphHttpClient.swift in Sources */,
+				31B5941F2B3641A8005C38CB /* ValidatingTextField.swift in Sources */,
+				3178A38E2B24B27100EC0AEE /* InvoiceFormView.swift in Sources */,
+				31FDE64A2AC8D23600FBEF4E /* ContentView.swift in Sources */,
+				3197EC882B3E2C8E0040E9D6 /* NavigationStack.swift in Sources */,
+				31FDE6482AC8D23600FBEF4E /* InvoiceBotApp.swift in Sources */,
+				3197EC8D2B3E3CE20040E9D6 /* ReplaySubject.swift in Sources */,
+				3180781C2B309E88001D0AEC /* InvoiceDTO.swift in Sources */,
+				318142F82B2269BB00541B35 /* MSAuth.swift in Sources */,
+				31CAA75C2B323ED700987137 /* DateExtensions.swift in Sources */,
+				312FC3D12ADC84840084C625 /* WebView.swift in Sources */,
+				311DD8202B40797200D651CE /* FetchableCache.swift in Sources */,
+				311DD8242B4210B500D651CE /* InvoiceHtmlFormatter.swift in Sources */,
+				31D6A4782B19C51800858F29 /* LoginView.swift in Sources */,
+				311DD8282B44949800D651CE /* EmailUtilities.swift in Sources */,
+				31D6A47A2B19C52300858F29 /* LoginViewModel.swift in Sources */,
+				31B594262B364C7E005C38CB /* FormValidator.swift in Sources */,
+				311DD8262B42284400D651CE /* InvoicePdfViewModel.swift in Sources */,
+				314924F62B25FD9400EC3111 /* Fetchable.swift in Sources */,
+				314924FA2B270E7C00EC3111 /* CancellableViewModel.swift in Sources */,
+				3197EC8A2B3E35890040E9D6 /* InvoicePdfView.swift in Sources */,
+				313BCD992B36E11400AAC22A /* NumberFormatterExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31FDE6512AC8D23800FBEF4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3178A3902B24B3EE00EC0AEE /* LoginViewModelTests.swift in Sources */,
+				31CAA75E2B323F8F00987137 /* DateExtensionsTests.swift in Sources */,
+				311DD82A2B44989B00D651CE /* EmailUtilitiesTests.swift in Sources */,
+				314924F82B270CA600EC3111 /* ExtensionsTests.swift in Sources */,
+				3140E0852B2864DC0073687B /* GenericDataFetcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31FDE65B2AC8D23800FBEF4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FDE6662AC8D23800FBEF4E /* InvoiceBotUITestsLaunchTests.swift in Sources */,
+				31FDE6642AC8D23800FBEF4E /* InvoiceBotUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31FDE6572AC8D23800FBEF4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31FDE6432AC8D23600FBEF4E /* InvoiceBot */;
+			targetProxy = 31FDE6562AC8D23800FBEF4E /* PBXContainerItemProxy */;
+		};
+		31FDE6612AC8D23800FBEF4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31FDE6432AC8D23600FBEF4E /* InvoiceBot */;
+			targetProxy = 31FDE6602AC8D23800FBEF4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		31FDE6672AC8D23800FBEF4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31FDE6682AC8D23800FBEF4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		31FDE66A2AC8D23800FBEF4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC5D7FDF543F8B379D98CEE7 /* Pods-InvoiceBot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InvoiceBot/InvoiceBotDebug.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InvoiceBot/Preview Content\"";
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InvoiceBot/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		31FDE66B2AC8D23800FBEF4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8CE73C9E6692479D63BC39A /* Pods-InvoiceBot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InvoiceBot/InvoiceBot.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InvoiceBot/Preview Content\"";
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InvoiceBot/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		31FDE66D2AC8D23800FBEF4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 781183EDA5205CE3B584E5D0 /* Pods-InvoiceBotTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvoiceBot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InvoiceBot";
+			};
+			name = Debug;
+		};
+		31FDE66E2AC8D23800FBEF4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82FAC8C00E92E9291EF35BA6 /* Pods-InvoiceBotTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvoiceBot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InvoiceBot";
+			};
+			name = Release;
+		};
+		31FDE6702AC8D23800FBEF4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AD93C34236B564265189410 /* Pods-InvoiceBot-InvoiceBotUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = InvoiceBot;
+			};
+			name = Debug;
+		};
+		31FDE6712AC8D23800FBEF4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82BD38AD6E23F6BDD4CE73CE /* Pods-InvoiceBot-InvoiceBotUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = InvoiceBot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31FDE63F2AC8D23600FBEF4E /* Build configuration list for PBXProject "InvoiceBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FDE6672AC8D23800FBEF4E /* Debug */,
+				31FDE6682AC8D23800FBEF4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31FDE6692AC8D23800FBEF4E /* Build configuration list for PBXNativeTarget "InvoiceBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FDE66A2AC8D23800FBEF4E /* Debug */,
+				31FDE66B2AC8D23800FBEF4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31FDE66C2AC8D23800FBEF4E /* Build configuration list for PBXNativeTarget "InvoiceBotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FDE66D2AC8D23800FBEF4E /* Debug */,
+				31FDE66E2AC8D23800FBEF4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31FDE66F2AC8D23800FBEF4E /* Build configuration list for PBXNativeTarget "InvoiceBotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FDE6702AC8D23800FBEF4E /* Debug */,
+				31FDE6712AC8D23800FBEF4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31FDE63C2AC8D23600FBEF4E /* Project object */;
+}

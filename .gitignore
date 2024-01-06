@@ -1,0 +1,81 @@
+# Xcode
+.DS_Store
+xcuserdata
+
+# Swift Package Manager
+.build
+
+# CocoaPods
+Pods
+
+# Carthage
+Carthage/Build
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Compiled Source
+*.pch
+*.gch
+*.modulemap
+*.xib
+*.storyboard
+*.nib
+*.strings
+*.localized
+
+# Build products
+build/
+DerivedData/
+*.build/
+
+# Skip the Xcode xcuserdata folder
+*.xcuserstate
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.Package.resolved
+
+# SwiftPM
+.build/
+Packages/
+Package.pins
+mint.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Volume icon file
+Icon?
+
+# Finder files
+.DS_Store
+._*
+
+# TextMate
+*.tmproj
+*.tmproject
+tmtags
+
+# VSCode
+.vscode/
+
+# ENV related plist
+Config.plist
+
+invoice.html
