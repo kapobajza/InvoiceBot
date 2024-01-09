@@ -1,6 +1,6 @@
 import XCTest
 
-@testable import InvoiceBot
+@testable import InvoiceBotAutoRunner
 
 final class DateExtensionsTests: XCTestCase {
     override func setUpWithError() throws {

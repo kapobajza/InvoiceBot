@@ -24,9 +24,9 @@ struct InvoicePdfView: StackNavigationView {
                         ProgressView()
                             .scaleEffect(0.5, anchor: .center)
                             .fixedSize(horizontal: true, vertical: true)
-                    } else {
-                        Text("Send PDF as mail")
                     }
+
+                    Text("Send PDF as mail")
                 }).alert(
                     invoicePdfViewModel.alertMessage ?? "",
                     isPresented: $invoicePdfViewModel.showAlert

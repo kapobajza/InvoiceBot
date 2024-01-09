@@ -15,6 +15,8 @@
 		311DD8262B42284400D651CE /* InvoicePdfViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DD8252B42284400D651CE /* InvoicePdfViewModel.swift */; };
 		311DD8282B44949800D651CE /* EmailUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DD8272B44949800D651CE /* EmailUtilities.swift */; };
 		311DD82A2B44989B00D651CE /* EmailUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DD8292B44989B00D651CE /* EmailUtilitiesTests.swift */; };
+		312D0ECB2B4D8221003D7FF3 /* Config-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 312D0EC92B4D8221003D7FF3 /* Config-Prod.plist */; };
+		312D0ECC2B4D8221003D7FF3 /* Config-Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 312D0ECA2B4D8221003D7FF3 /* Config-Dev.plist */; };
 		312FC3D12ADC84840084C625 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312FC3D02ADC84840084C625 /* WebView.swift */; };
 		312FC3DB2ADC8BD30084C625 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312FC3DA2ADC8BD30084C625 /* FileManagerExtensions.swift */; };
 		313BCD992B36E11400AAC22A /* NumberFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BCD982B36E11400AAC22A /* NumberFormatterExtensions.swift */; };
@@ -27,13 +29,14 @@
 		315EAE172AD3EEBE00011663 /* line_1_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 315EAE162AD3EEBE00011663 /* line_1_0.png */; };
 		3178A38E2B24B27100EC0AEE /* InvoiceFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3178A38D2B24B27100EC0AEE /* InvoiceFormView.swift */; };
 		3178A3902B24B3EE00EC0AEE /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3178A38F2B24B3EE00EC0AEE /* LoginViewModelTests.swift */; };
+		317D21FA2B4C777700576649 /* InvoiceBotAutoRunner.app in Resources */ = {isa = PBXBuildFile; fileRef = 31D63FC52B4C69D200679FEC /* InvoiceBotAutoRunner.app */; };
+		317D22042B4C7CAD00576649 /* InvoiceBotAutoRunner.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 31D63FC52B4C69D200679FEC /* InvoiceBotAutoRunner.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3180781A2B3097E4001D0AEC /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318078192B3097E4001D0AEC /* ViewExtensions.swift */; };
 		3180781C2B309E88001D0AEC /* InvoiceDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180781B2B309E88001D0AEC /* InvoiceDTO.swift */; };
 		3180781E2B309F3C001D0AEC /* MSGraphHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180781D2B309F3C001D0AEC /* MSGraphHttpClient.swift */; };
 		318142F22B2252C400541B35 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318142F12B2252C400541B35 /* HttpClient.swift */; };
 		318142F42B225C8200541B35 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318142F32B225C8200541B35 /* Storage.swift */; };
 		318142F82B2269BB00541B35 /* MSAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318142F72B2269BB00541B35 /* MSAuth.swift */; };
-		318142FB2B22710100541B35 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 318142FA2B22710100541B35 /* Config.plist */; };
 		318142FD2B2271A500541B35 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318142FC2B2271A500541B35 /* Config.swift */; };
 		3197EC882B3E2C8E0040E9D6 /* NavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3197EC872B3E2C8E0040E9D6 /* NavigationStack.swift */; };
 		3197EC8A2B3E35890040E9D6 /* InvoicePdfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3197EC892B3E35890040E9D6 /* InvoicePdfView.swift */; };
@@ -41,8 +44,11 @@
 		31B5941F2B3641A8005C38CB /* ValidatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B5941E2B3641A8005C38CB /* ValidatingTextField.swift */; };
 		31B594262B364C7E005C38CB /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B594252B364C7E005C38CB /* FormValidator.swift */; };
 		31CAA75A2B31982800987137 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CAA7592B31982800987137 /* ServiceManagement.framework */; };
-		31CAA75C2B323ED700987137 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CAA75B2B323ED700987137 /* DateExtensions.swift */; };
-		31CAA75E2B323F8F00987137 /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CAA75D2B323F8F00987137 /* DateExtensionsTests.swift */; };
+		31D63FC82B4C69D200679FEC /* InvoiceBotAutoRunnerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D63FC72B4C69D200679FEC /* InvoiceBotAutoRunnerApp.swift */; };
+		31D63FCC2B4C69D400679FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D63FCB2B4C69D400679FEC /* Assets.xcassets */; };
+		31D63FCF2B4C69D400679FEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D63FCE2B4C69D400679FEC /* Preview Assets.xcassets */; };
+		31D63FF62B4C6DDD00679FEC /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CAA75B2B323ED700987137 /* DateExtensions.swift */; };
+		31D63FF72B4C6E3E00679FEC /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CAA75D2B323F8F00987137 /* DateExtensionsTests.swift */; };
 		31D6A4782B19C51800858F29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A4772B19C51800858F29 /* LoginView.swift */; };
 		31D6A47A2B19C52300858F29 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A4792B19C52300858F29 /* LoginViewModel.swift */; };
 		31FDE6482AC8D23600FBEF4E /* InvoiceBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FDE6472AC8D23600FBEF4E /* InvoiceBotApp.swift */; };
@@ -55,6 +61,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		317D21FB2B4C777700576649 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31FDE63C2AC8D23600FBEF4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31D63FC42B4C69D200679FEC;
+			remoteInfo = InvoiceBotAutoRunner;
+		};
+		31D63FD62B4C69D400679FEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31FDE63C2AC8D23600FBEF4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31D63FC42B4C69D200679FEC;
+			remoteInfo = InvoiceBotAutoRunner;
+		};
 		31FDE6562AC8D23800FBEF4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 31FDE63C2AC8D23600FBEF4E /* Project object */;
@@ -71,6 +91,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		317D22032B4C7C8000576649 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				317D22042B4C7CAD00576649 /* InvoiceBotAutoRunner.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		253393D97879E3C63B260C67 /* Pods_InvoiceBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoiceBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		311DD81F2B40797200D651CE /* FetchableCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchableCache.swift; sourceTree = "<group>"; };
@@ -79,6 +112,8 @@
 		311DD8252B42284400D651CE /* InvoicePdfViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicePdfViewModel.swift; sourceTree = "<group>"; };
 		311DD8272B44949800D651CE /* EmailUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUtilities.swift; sourceTree = "<group>"; };
 		311DD8292B44989B00D651CE /* EmailUtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUtilitiesTests.swift; sourceTree = "<group>"; };
+		312D0EC92B4D8221003D7FF3 /* Config-Prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Config-Prod.plist"; sourceTree = "<group>"; };
+		312D0ECA2B4D8221003D7FF3 /* Config-Dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Config-Dev.plist"; sourceTree = "<group>"; };
 		312FC3D02ADC84840084C625 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		312FC3DA2ADC8BD30084C625 /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
 		313BCD982B36E11400AAC22A /* NumberFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatterExtensions.swift; sourceTree = "<group>"; };
@@ -97,7 +132,6 @@
 		318142F12B2252C400541B35 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		318142F32B225C8200541B35 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		318142F72B2269BB00541B35 /* MSAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAuth.swift; sourceTree = "<group>"; };
-		318142FA2B22710100541B35 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		318142FC2B2271A500541B35 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		3197EC872B3E2C8E0040E9D6 /* NavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStack.swift; sourceTree = "<group>"; };
 		3197EC892B3E35890040E9D6 /* InvoicePdfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicePdfView.swift; sourceTree = "<group>"; };
@@ -107,7 +141,13 @@
 		31CAA7592B31982800987137 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		31CAA75B2B323ED700987137 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		31CAA75D2B323F8F00987137 /* DateExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionsTests.swift; sourceTree = "<group>"; };
-		31D6A4752B18E90C00858F29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		31D63FC52B4C69D200679FEC /* InvoiceBotAutoRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvoiceBotAutoRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D63FC72B4C69D200679FEC /* InvoiceBotAutoRunnerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceBotAutoRunnerApp.swift; sourceTree = "<group>"; };
+		31D63FCB2B4C69D400679FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31D63FCE2B4C69D400679FEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31D63FD02B4C69D400679FEC /* InvoiceBotAutoRunner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvoiceBotAutoRunner.entitlements; sourceTree = "<group>"; };
+		31D63FD52B4C69D400679FEC /* InvoiceBotAutoRunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvoiceBotAutoRunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D63FF02B4C6A3B00679FEC /* InvoiceBotAutoRunnerDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvoiceBotAutoRunnerDebug.entitlements; sourceTree = "<group>"; };
 		31D6A4772B19C51800858F29 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		31D6A4792B19C52300858F29 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		31D6A47B2B19D18500858F29 /* InvoiceBotDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvoiceBotDebug.entitlements; sourceTree = "<group>"; };
@@ -121,6 +161,7 @@
 		31FDE65F2AC8D23800FBEF4E /* InvoiceBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvoiceBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FDE6632AC8D23800FBEF4E /* InvoiceBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceBotUITests.swift; sourceTree = "<group>"; };
 		31FDE6652AC8D23800FBEF4E /* InvoiceBotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceBotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		35DA6AD2A695ED2039AF0DD8 /* Pods-InvoiceBot-InvoiceBotUITests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoiceBot-InvoiceBotUITests.production.xcconfig"; path = "Target Support Files/Pods-InvoiceBot-InvoiceBotUITests/Pods-InvoiceBot-InvoiceBotUITests.production.xcconfig"; sourceTree = "<group>"; };
 		781183EDA5205CE3B584E5D0 /* Pods-InvoiceBotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoiceBotTests.debug.xcconfig"; path = "Target Support Files/Pods-InvoiceBotTests/Pods-InvoiceBotTests.debug.xcconfig"; sourceTree = "<group>"; };
 		82BD38AD6E23F6BDD4CE73CE /* Pods-InvoiceBot-InvoiceBotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoiceBot-InvoiceBotUITests.release.xcconfig"; path = "Target Support Files/Pods-InvoiceBot-InvoiceBotUITests/Pods-InvoiceBot-InvoiceBotUITests.release.xcconfig"; sourceTree = "<group>"; };
 		82FAC8C00E92E9291EF35BA6 /* Pods-InvoiceBotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoiceBotTests.release.xcconfig"; path = "Target Support Files/Pods-InvoiceBotTests/Pods-InvoiceBotTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,10 +169,26 @@
 		95AB04D5AA4335736041CB01 /* Pods_InvoiceBot_InvoiceBotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoiceBot_InvoiceBotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A672CB0806F75D1ACDE3C1 /* Pods_InvoiceBotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoiceBotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CE73C9E6692479D63BC39A /* Pods-InvoiceBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoiceBot.release.xcconfig"; path = "Target Support Files/Pods-InvoiceBot/Pods-InvoiceBot.release.xcconfig"; sourceTree = "<group>"; };
+		A91B95D84612013BABAA5D6E /* Pods-InvoiceBotTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoiceBotTests.production.xcconfig"; path = "Target Support Files/Pods-InvoiceBotTests/Pods-InvoiceBotTests.production.xcconfig"; sourceTree = "<group>"; };
+		E6EF82F429E45B1AC5C5465B /* Pods-InvoiceBot.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoiceBot.production.xcconfig"; path = "Target Support Files/Pods-InvoiceBot/Pods-InvoiceBot.production.xcconfig"; sourceTree = "<group>"; };
 		FC5D7FDF543F8B379D98CEE7 /* Pods-InvoiceBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoiceBot.debug.xcconfig"; path = "Target Support Files/Pods-InvoiceBot/Pods-InvoiceBot.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		31D63FC22B4C69D200679FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31D63FD22B4C69D400679FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31FDE6412AC8D23600FBEF4E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,6 +228,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		312D0EC02B4CAB05003D7FF3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		312FC3CD2ADC84650084C625 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,7 +250,6 @@
 			children = (
 				312FC3DA2ADC8BD30084C625 /* FileManagerExtensions.swift */,
 				318078192B3097E4001D0AEC /* ViewExtensions.swift */,
-				31CAA75B2B323ED700987137 /* DateExtensions.swift */,
 				313BCD982B36E11400AAC22A /* NumberFormatterExtensions.swift */,
 			);
 			path = Extensions;
@@ -247,6 +310,44 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		31D63FC62B4C69D200679FEC /* InvoiceBotAutoRunner */ = {
+			isa = PBXGroup;
+			children = (
+				312D0EC02B4CAB05003D7FF3 /* Utilities */,
+				31D63FF52B4C6DD700679FEC /* Extensions */,
+				31D63FF02B4C6A3B00679FEC /* InvoiceBotAutoRunnerDebug.entitlements */,
+				31D63FC72B4C69D200679FEC /* InvoiceBotAutoRunnerApp.swift */,
+				31D63FCB2B4C69D400679FEC /* Assets.xcassets */,
+				31D63FD02B4C69D400679FEC /* InvoiceBotAutoRunner.entitlements */,
+				31D63FCD2B4C69D400679FEC /* Preview Content */,
+			);
+			path = InvoiceBotAutoRunner;
+			sourceTree = "<group>";
+		};
+		31D63FCD2B4C69D400679FEC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				31D63FCE2B4C69D400679FEC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31D63FD82B4C69D400679FEC /* InvoiceBotAutoRunnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				31CAA75D2B323F8F00987137 /* DateExtensionsTests.swift */,
+			);
+			path = InvoiceBotAutoRunnerTests;
+			sourceTree = "<group>";
+		};
+		31D63FF52B4C6DD700679FEC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				31CAA75B2B323ED700987137 /* DateExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		31D6A4762B19C50000858F29 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +363,8 @@
 				31FDE6462AC8D23600FBEF4E /* InvoiceBot */,
 				31FDE6582AC8D23800FBEF4E /* InvoiceBotTests */,
 				31FDE6622AC8D23800FBEF4E /* InvoiceBotUITests */,
+				31D63FC62B4C69D200679FEC /* InvoiceBotAutoRunner */,
+				31D63FD82B4C69D400679FEC /* InvoiceBotAutoRunnerTests */,
 				31FDE6452AC8D23600FBEF4E /* Products */,
 				C09FCE9BED6A9B0D281518B9 /* Pods */,
 				0127F6BBC8661CD9BF12F008 /* Frameworks */,
@@ -274,6 +377,8 @@
 				31FDE6442AC8D23600FBEF4E /* InvoiceBot.app */,
 				31FDE6552AC8D23800FBEF4E /* InvoiceBotTests.xctest */,
 				31FDE65F2AC8D23800FBEF4E /* InvoiceBotUITests.xctest */,
+				31D63FC52B4C69D200679FEC /* InvoiceBotAutoRunner.app */,
+				31D63FD52B4C69D400679FEC /* InvoiceBotAutoRunnerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,13 +386,14 @@
 		31FDE6462AC8D23600FBEF4E /* InvoiceBot */ = {
 			isa = PBXGroup;
 			children = (
+				312D0ECA2B4D8221003D7FF3 /* Config-Dev.plist */,
+				312D0EC92B4D8221003D7FF3 /* Config-Prod.plist */,
 				3197EC8B2B3E366E0040E9D6 /* Assets */,
 				3197EC862B3E2C7F0040E9D6 /* Navigation */,
 				3178A38C2B24B25200EC0AEE /* Invoice */,
 				318142F02B2252B600541B35 /* Networking */,
 				31D6A47B2B19D18500858F29 /* InvoiceBotDebug.entitlements */,
 				31D6A4762B19C50000858F29 /* Auth */,
-				31D6A4752B18E90C00858F29 /* Info.plist */,
 				312FC3DC2ADC8F660084C625 /* Utilities */,
 				312FC3D72ADC8B1B0084C625 /* Extensions */,
 				312FC3CD2ADC84650084C625 /* Views */,
@@ -296,7 +402,6 @@
 				31FDE64B2AC8D23800FBEF4E /* Assets.xcassets */,
 				31FDE6502AC8D23800FBEF4E /* InvoiceBot.entitlements */,
 				31FDE64D2AC8D23800FBEF4E /* Preview Content */,
-				318142FA2B22710100541B35 /* Config.plist */,
 			);
 			path = InvoiceBot;
 			sourceTree = "<group>";
@@ -315,7 +420,6 @@
 				3178A38F2B24B3EE00EC0AEE /* LoginViewModelTests.swift */,
 				314924F72B270CA600EC3111 /* ExtensionsTests.swift */,
 				3140E0842B2864DC0073687B /* GenericDataFetcherTests.swift */,
-				31CAA75D2B323F8F00987137 /* DateExtensionsTests.swift */,
 				311DD8292B44989B00D651CE /* EmailUtilitiesTests.swift */,
 			);
 			path = InvoiceBotTests;
@@ -339,6 +443,9 @@
 				82BD38AD6E23F6BDD4CE73CE /* Pods-InvoiceBot-InvoiceBotUITests.release.xcconfig */,
 				781183EDA5205CE3B584E5D0 /* Pods-InvoiceBotTests.debug.xcconfig */,
 				82FAC8C00E92E9291EF35BA6 /* Pods-InvoiceBotTests.release.xcconfig */,
+				E6EF82F429E45B1AC5C5465B /* Pods-InvoiceBot.production.xcconfig */,
+				35DA6AD2A695ED2039AF0DD8 /* Pods-InvoiceBot-InvoiceBotUITests.production.xcconfig */,
+				A91B95D84612013BABAA5D6E /* Pods-InvoiceBotTests.production.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -346,6 +453,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		31D63FC42B4C69D200679FEC /* InvoiceBotAutoRunner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31D63FED2B4C69D400679FEC /* Build configuration list for PBXNativeTarget "InvoiceBotAutoRunner" */;
+			buildPhases = (
+				31D63FC12B4C69D200679FEC /* Sources */,
+				31D63FC22B4C69D200679FEC /* Frameworks */,
+				31D63FC32B4C69D200679FEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InvoiceBotAutoRunner;
+			productName = InvoiceBotAutoRunner;
+			productReference = 31D63FC52B4C69D200679FEC /* InvoiceBotAutoRunner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31D63FD42B4C69D400679FEC /* InvoiceBotAutoRunnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31D63FEE2B4C69D400679FEC /* Build configuration list for PBXNativeTarget "InvoiceBotAutoRunnerTests" */;
+			buildPhases = (
+				31D63FD12B4C69D400679FEC /* Sources */,
+				31D63FD22B4C69D400679FEC /* Frameworks */,
+				31D63FD32B4C69D400679FEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31D63FD72B4C69D400679FEC /* PBXTargetDependency */,
+			);
+			name = InvoiceBotAutoRunnerTests;
+			productName = InvoiceBotAutoRunnerTests;
+			productReference = 31D63FD52B4C69D400679FEC /* InvoiceBotAutoRunnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		31FDE6432AC8D23600FBEF4E /* InvoiceBot */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31FDE6692AC8D23800FBEF4E /* Build configuration list for PBXNativeTarget "InvoiceBot" */;
@@ -355,10 +497,12 @@
 				31FDE6412AC8D23600FBEF4E /* Frameworks */,
 				31FDE6422AC8D23600FBEF4E /* Resources */,
 				3AC0DFFBB35A457EA5B98E02 /* [CP] Embed Pods Frameworks */,
+				317D22032B4C7C8000576649 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				317D21FC2B4C777700576649 /* PBXTargetDependency */,
 			);
 			name = InvoiceBot;
 			productName = InvoiceBot;
@@ -411,9 +555,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					31D63FC42B4C69D200679FEC = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					31D63FD42B4C69D400679FEC = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 31D63FC42B4C69D200679FEC;
+					};
 					31FDE6432AC8D23600FBEF4E = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -443,19 +594,39 @@
 				31FDE6432AC8D23600FBEF4E /* InvoiceBot */,
 				31FDE6542AC8D23800FBEF4E /* InvoiceBotTests */,
 				31FDE65E2AC8D23800FBEF4E /* InvoiceBotUITests */,
+				31D63FC42B4C69D200679FEC /* InvoiceBotAutoRunner */,
+				31D63FD42B4C69D400679FEC /* InvoiceBotAutoRunnerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		31D63FC32B4C69D200679FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D63FCF2B4C69D400679FEC /* Preview Assets.xcassets in Resources */,
+				31D63FCC2B4C69D400679FEC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31D63FD32B4C69D400679FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31FDE6422AC8D23600FBEF4E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				318142FB2B22710100541B35 /* Config.plist in Resources */,
 				31FDE64F2AC8D23800FBEF4E /* Preview Assets.xcassets in Resources */,
+				317D21FA2B4C777700576649 /* InvoiceBotAutoRunner.app in Resources */,
 				31FDE64C2AC8D23800FBEF4E /* Assets.xcassets in Resources */,
+				312D0ECB2B4D8221003D7FF3 /* Config-Prod.plist in Resources */,
 				311DD8222B42018900D651CE /* invoice.html in Resources */,
+				312D0ECC2B4D8221003D7FF3 /* Config-Dev.plist in Resources */,
 				315EAE172AD3EEBE00011663 /* line_1_0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +751,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		31D63FC12B4C69D200679FEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D63FC82B4C69D200679FEC /* InvoiceBotAutoRunnerApp.swift in Sources */,
+				31D63FF62B4C6DDD00679FEC /* DateExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31D63FD12B4C69D400679FEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D63FF72B4C6E3E00679FEC /* DateExtensionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31FDE6402AC8D23600FBEF4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -600,7 +788,6 @@
 				3197EC8D2B3E3CE20040E9D6 /* ReplaySubject.swift in Sources */,
 				3180781C2B309E88001D0AEC /* InvoiceDTO.swift in Sources */,
 				318142F82B2269BB00541B35 /* MSAuth.swift in Sources */,
-				31CAA75C2B323ED700987137 /* DateExtensions.swift in Sources */,
 				312FC3D12ADC84840084C625 /* WebView.swift in Sources */,
 				311DD8202B40797200D651CE /* FetchableCache.swift in Sources */,
 				311DD8242B4210B500D651CE /* InvoiceHtmlFormatter.swift in Sources */,
@@ -621,7 +808,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3178A3902B24B3EE00EC0AEE /* LoginViewModelTests.swift in Sources */,
-				31CAA75E2B323F8F00987137 /* DateExtensionsTests.swift in Sources */,
 				311DD82A2B44989B00D651CE /* EmailUtilitiesTests.swift in Sources */,
 				314924F82B270CA600EC3111 /* ExtensionsTests.swift in Sources */,
 				3140E0852B2864DC0073687B /* GenericDataFetcherTests.swift in Sources */,
@@ -640,6 +826,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		317D21FC2B4C777700576649 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31D63FC42B4C69D200679FEC /* InvoiceBotAutoRunner */;
+			targetProxy = 317D21FB2B4C777700576649 /* PBXContainerItemProxy */;
+		};
+		31D63FD72B4C69D400679FEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31D63FC42B4C69D200679FEC /* InvoiceBotAutoRunner */;
+			targetProxy = 31D63FD62B4C69D400679FEC /* PBXContainerItemProxy */;
+		};
 		31FDE6572AC8D23800FBEF4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 31FDE6432AC8D23600FBEF4E /* InvoiceBot */;
@@ -653,6 +849,303 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		312D0EC32B4CAFA2003D7FF3 /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "\"-D PRODUCTION\"";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRODUCTION;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Production;
+		};
+		312D0EC42B4CAFA2003D7FF3 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6EF82F429E45B1AC5C5465B /* Pods-InvoiceBot.production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InvoiceBot/InvoiceBot.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InvoiceBot/Preview Content\"";
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InvoiceBot/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRODUCTION;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Production;
+		};
+		312D0EC52B4CAFA2003D7FF3 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A91B95D84612013BABAA5D6E /* Pods-InvoiceBotTests.production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvoiceBot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InvoiceBot";
+			};
+			name = Production;
+		};
+		312D0EC62B4CAFA2003D7FF3 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35DA6AD2A695ED2039AF0DD8 /* Pods-InvoiceBot-InvoiceBotUITests.production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = InvoiceBot;
+			};
+			name = Production;
+		};
+		312D0EC72B4CAFA2003D7FF3 /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InvoiceBotAutoRunner/InvoiceBotAutoRunner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InvoiceBotAutoRunner/Preview Content\"";
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotAutoRunner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Production;
+		};
+		312D0EC82B4CAFA2003D7FF3 /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotAutoRunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvoiceBotAutoRunner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InvoiceBotAutoRunner";
+			};
+			name = Production;
+		};
+		31D63FE72B4C69D400679FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InvoiceBotAutoRunner/InvoiceBotAutoRunnerDebug.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InvoiceBotAutoRunner/Preview Content\"";
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotAutoRunner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		31D63FE82B4C69D400679FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InvoiceBotAutoRunner/InvoiceBotAutoRunner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InvoiceBotAutoRunner/Preview Content\"";
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotAutoRunner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		31D63FE92B4C69D400679FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotAutoRunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvoiceBotAutoRunner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InvoiceBotAutoRunner";
+			};
+			name = Debug;
+		};
+		31D63FEA2B4C69D400679FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93PL5G8G65;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotAutoRunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvoiceBotAutoRunner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InvoiceBotAutoRunner";
+			};
+			name = Release;
+		};
 		31FDE6672AC8D23800FBEF4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -707,6 +1200,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -903,11 +1397,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		31D63FED2B4C69D400679FEC /* Build configuration list for PBXNativeTarget "InvoiceBotAutoRunner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31D63FE72B4C69D400679FEC /* Debug */,
+				31D63FE82B4C69D400679FEC /* Release */,
+				312D0EC72B4CAFA2003D7FF3 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31D63FEE2B4C69D400679FEC /* Build configuration list for PBXNativeTarget "InvoiceBotAutoRunnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31D63FE92B4C69D400679FEC /* Debug */,
+				31D63FEA2B4C69D400679FEC /* Release */,
+				312D0EC82B4CAFA2003D7FF3 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		31FDE63F2AC8D23600FBEF4E /* Build configuration list for PBXProject "InvoiceBot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				31FDE6672AC8D23800FBEF4E /* Debug */,
 				31FDE6682AC8D23800FBEF4E /* Release */,
+				312D0EC32B4CAFA2003D7FF3 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -917,6 +1432,7 @@
 			buildConfigurations = (
 				31FDE66A2AC8D23800FBEF4E /* Debug */,
 				31FDE66B2AC8D23800FBEF4E /* Release */,
+				312D0EC42B4CAFA2003D7FF3 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -926,6 +1442,7 @@
 			buildConfigurations = (
 				31FDE66D2AC8D23800FBEF4E /* Debug */,
 				31FDE66E2AC8D23800FBEF4E /* Release */,
+				312D0EC52B4CAFA2003D7FF3 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -935,6 +1452,7 @@
 			buildConfigurations = (
 				31FDE6702AC8D23800FBEF4E /* Debug */,
 				31FDE6712AC8D23800FBEF4E /* Release */,
+				312D0EC62B4CAFA2003D7FF3 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

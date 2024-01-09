@@ -76,6 +76,6 @@ tmtags
 .vscode/
 
 # ENV related plist
-Config.plist
+Config-*.plist
 
 invoice.html
