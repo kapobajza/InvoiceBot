@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function getLastWorkingDayOfMonth() {
+function isLastWorkingDayOfMonth() {
     last_day=$(date -j -f "%Y-%m-%d" -v +1m -v1d -v-1d "$1" +%Y-%m-%d)
 
     while true; do

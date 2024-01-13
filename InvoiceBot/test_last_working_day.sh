@@ -24,11 +24,11 @@ function assertFalse() {
   fi
 }
 
-assertFalse "getLastWorkingDayOfMonth 2023-11-04" "1"
-assertFalse "getLastWorkingDayOfMonth 2023-12-02" "2"
-assertTrue "getLastWorkingDayOfMonth 2023-12-29" "3"
-assertTrue "getLastWorkingDayOfMonth 2023-11-30" "4"
-assertTrue "getLastWorkingDayOfMonth 2023-02-28" "5"
-assertFalse "getLastWorkingDayOfMonth 2023-12-31" "6"
-assertFalse "getLastWorkingDayOfMonth 2023-11-29" "7"
-assertFalse "getLastWorkingDayOfMonth 2023-11-28" "8"
+assertFalse "isLastWorkingDayOfMonth 2023-11-04" "1"
+assertFalse "isLastWorkingDayOfMonth 2023-12-02" "2"
+assertTrue "isLastWorkingDayOfMonth 2023-12-29" "3"
+assertTrue "isLastWorkingDayOfMonth 2023-11-30" "4"
+assertTrue "isLastWorkingDayOfMonth 2023-02-28" "5"
+assertFalse "isLastWorkingDayOfMonth 2023-12-31" "6"
+assertFalse "isLastWorkingDayOfMonth 2023-11-29" "7"
+assertFalse "isLastWorkingDayOfMonth 2023-11-28" "8"
