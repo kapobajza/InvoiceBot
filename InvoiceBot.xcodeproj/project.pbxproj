@@ -27,10 +27,12 @@
 		314924F82B270CA600EC3111 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314924F72B270CA600EC3111 /* ExtensionsTests.swift */; };
 		314924FA2B270E7C00EC3111 /* CancellableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314924F92B270E7C00EC3111 /* CancellableViewModel.swift */; };
 		315EAE172AD3EEBE00011663 /* line_1_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 315EAE162AD3EEBE00011663 /* line_1_0.png */; };
+		3173C2BD2B52A5EE00FBE551 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CAA75B2B323ED700987137 /* DateExtensions.swift */; };
+		3173C2C02B52B3B900FBE551 /* test_last_working_day.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3173C2BE2B52B3B900FBE551 /* test_last_working_day.sh */; };
+		3173C2C12B52B3B900FBE551 /* last_working_day.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3173C2BF2B52B3B900FBE551 /* last_working_day.sh */; };
+		3173C2C32B52B48300FBE551 /* today_is_last_working_day.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3173C2C22B52B48300FBE551 /* today_is_last_working_day.sh */; };
 		3178A38E2B24B27100EC0AEE /* InvoiceFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3178A38D2B24B27100EC0AEE /* InvoiceFormView.swift */; };
 		3178A3902B24B3EE00EC0AEE /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3178A38F2B24B3EE00EC0AEE /* LoginViewModelTests.swift */; };
-		317D21FA2B4C777700576649 /* InvoiceBotAutoRunner.app in Resources */ = {isa = PBXBuildFile; fileRef = 31D63FC52B4C69D200679FEC /* InvoiceBotAutoRunner.app */; };
-		317D22042B4C7CAD00576649 /* InvoiceBotAutoRunner.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 31D63FC52B4C69D200679FEC /* InvoiceBotAutoRunner.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3180781A2B3097E4001D0AEC /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318078192B3097E4001D0AEC /* ViewExtensions.swift */; };
 		3180781C2B309E88001D0AEC /* InvoiceDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180781B2B309E88001D0AEC /* InvoiceDTO.swift */; };
 		3180781E2B309F3C001D0AEC /* MSGraphHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180781D2B309F3C001D0AEC /* MSGraphHttpClient.swift */; };
@@ -44,11 +46,6 @@
 		31B5941F2B3641A8005C38CB /* ValidatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B5941E2B3641A8005C38CB /* ValidatingTextField.swift */; };
 		31B594262B364C7E005C38CB /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B594252B364C7E005C38CB /* FormValidator.swift */; };
 		31CAA75A2B31982800987137 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CAA7592B31982800987137 /* ServiceManagement.framework */; };
-		31D63FC82B4C69D200679FEC /* InvoiceBotAutoRunnerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D63FC72B4C69D200679FEC /* InvoiceBotAutoRunnerApp.swift */; };
-		31D63FCC2B4C69D400679FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D63FCB2B4C69D400679FEC /* Assets.xcassets */; };
-		31D63FCF2B4C69D400679FEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D63FCE2B4C69D400679FEC /* Preview Assets.xcassets */; };
-		31D63FF62B4C6DDD00679FEC /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CAA75B2B323ED700987137 /* DateExtensions.swift */; };
-		31D63FF72B4C6E3E00679FEC /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CAA75D2B323F8F00987137 /* DateExtensionsTests.swift */; };
 		31D6A4782B19C51800858F29 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A4772B19C51800858F29 /* LoginView.swift */; };
 		31D6A47A2B19C52300858F29 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A4792B19C52300858F29 /* LoginViewModel.swift */; };
 		31FDE6482AC8D23600FBEF4E /* InvoiceBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FDE6472AC8D23600FBEF4E /* InvoiceBotApp.swift */; };
@@ -61,20 +58,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		317D21FB2B4C777700576649 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 31FDE63C2AC8D23600FBEF4E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 31D63FC42B4C69D200679FEC;
-			remoteInfo = InvoiceBotAutoRunner;
-		};
-		31D63FD62B4C69D400679FEC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 31FDE63C2AC8D23600FBEF4E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 31D63FC42B4C69D200679FEC;
-			remoteInfo = InvoiceBotAutoRunner;
-		};
 		31FDE6562AC8D23800FBEF4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 31FDE63C2AC8D23600FBEF4E /* Project object */;
@@ -90,19 +73,6 @@
 			remoteInfo = InvoiceBot;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		317D22032B4C7C8000576649 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Contents/Library/LoginItems;
-			dstSubfolderSpec = 1;
-			files = (
-				317D22042B4C7CAD00576649 /* InvoiceBotAutoRunner.app in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		253393D97879E3C63B260C67 /* Pods_InvoiceBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoiceBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +94,9 @@
 		314924F72B270CA600EC3111 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 		314924F92B270E7C00EC3111 /* CancellableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellableViewModel.swift; sourceTree = "<group>"; };
 		315EAE162AD3EEBE00011663 /* line_1_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_1_0.png; sourceTree = "<group>"; };
+		3173C2BE2B52B3B900FBE551 /* test_last_working_day.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = test_last_working_day.sh; sourceTree = "<group>"; };
+		3173C2BF2B52B3B900FBE551 /* last_working_day.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = last_working_day.sh; sourceTree = "<group>"; };
+		3173C2C22B52B48300FBE551 /* today_is_last_working_day.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = today_is_last_working_day.sh; sourceTree = "<group>"; };
 		3178A38D2B24B27100EC0AEE /* InvoiceFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceFormView.swift; sourceTree = "<group>"; };
 		3178A38F2B24B3EE00EC0AEE /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		318078192B3097E4001D0AEC /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
@@ -140,14 +113,6 @@
 		31B594252B364C7E005C38CB /* FormValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
 		31CAA7592B31982800987137 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		31CAA75B2B323ED700987137 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
-		31CAA75D2B323F8F00987137 /* DateExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionsTests.swift; sourceTree = "<group>"; };
-		31D63FC52B4C69D200679FEC /* InvoiceBotAutoRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvoiceBotAutoRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		31D63FC72B4C69D200679FEC /* InvoiceBotAutoRunnerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceBotAutoRunnerApp.swift; sourceTree = "<group>"; };
-		31D63FCB2B4C69D400679FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		31D63FCE2B4C69D400679FEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		31D63FD02B4C69D400679FEC /* InvoiceBotAutoRunner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvoiceBotAutoRunner.entitlements; sourceTree = "<group>"; };
-		31D63FD52B4C69D400679FEC /* InvoiceBotAutoRunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvoiceBotAutoRunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		31D63FF02B4C6A3B00679FEC /* InvoiceBotAutoRunnerDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvoiceBotAutoRunnerDebug.entitlements; sourceTree = "<group>"; };
 		31D6A4772B19C51800858F29 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		31D6A4792B19C52300858F29 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		31D6A47B2B19D18500858F29 /* InvoiceBotDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvoiceBotDebug.entitlements; sourceTree = "<group>"; };
@@ -175,20 +140,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		31D63FC22B4C69D200679FEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		31D63FD22B4C69D400679FEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		31FDE6412AC8D23600FBEF4E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,13 +179,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		312D0EC02B4CAB05003D7FF3 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
 		312FC3CD2ADC84650084C625 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +192,7 @@
 		312FC3D72ADC8B1B0084C625 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				31CAA75B2B323ED700987137 /* DateExtensions.swift */,
 				312FC3DA2ADC8BD30084C625 /* FileManagerExtensions.swift */,
 				318078192B3097E4001D0AEC /* ViewExtensions.swift */,
 				313BCD982B36E11400AAC22A /* NumberFormatterExtensions.swift */,
@@ -310,44 +255,6 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		31D63FC62B4C69D200679FEC /* InvoiceBotAutoRunner */ = {
-			isa = PBXGroup;
-			children = (
-				312D0EC02B4CAB05003D7FF3 /* Utilities */,
-				31D63FF52B4C6DD700679FEC /* Extensions */,
-				31D63FF02B4C6A3B00679FEC /* InvoiceBotAutoRunnerDebug.entitlements */,
-				31D63FC72B4C69D200679FEC /* InvoiceBotAutoRunnerApp.swift */,
-				31D63FCB2B4C69D400679FEC /* Assets.xcassets */,
-				31D63FD02B4C69D400679FEC /* InvoiceBotAutoRunner.entitlements */,
-				31D63FCD2B4C69D400679FEC /* Preview Content */,
-			);
-			path = InvoiceBotAutoRunner;
-			sourceTree = "<group>";
-		};
-		31D63FCD2B4C69D400679FEC /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				31D63FCE2B4C69D400679FEC /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		31D63FD82B4C69D400679FEC /* InvoiceBotAutoRunnerTests */ = {
-			isa = PBXGroup;
-			children = (
-				31CAA75D2B323F8F00987137 /* DateExtensionsTests.swift */,
-			);
-			path = InvoiceBotAutoRunnerTests;
-			sourceTree = "<group>";
-		};
-		31D63FF52B4C6DD700679FEC /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				31CAA75B2B323ED700987137 /* DateExtensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		31D6A4762B19C50000858F29 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,8 +270,6 @@
 				31FDE6462AC8D23600FBEF4E /* InvoiceBot */,
 				31FDE6582AC8D23800FBEF4E /* InvoiceBotTests */,
 				31FDE6622AC8D23800FBEF4E /* InvoiceBotUITests */,
-				31D63FC62B4C69D200679FEC /* InvoiceBotAutoRunner */,
-				31D63FD82B4C69D400679FEC /* InvoiceBotAutoRunnerTests */,
 				31FDE6452AC8D23600FBEF4E /* Products */,
 				C09FCE9BED6A9B0D281518B9 /* Pods */,
 				0127F6BBC8661CD9BF12F008 /* Frameworks */,
@@ -377,8 +282,6 @@
 				31FDE6442AC8D23600FBEF4E /* InvoiceBot.app */,
 				31FDE6552AC8D23800FBEF4E /* InvoiceBotTests.xctest */,
 				31FDE65F2AC8D23800FBEF4E /* InvoiceBotUITests.xctest */,
-				31D63FC52B4C69D200679FEC /* InvoiceBotAutoRunner.app */,
-				31D63FD52B4C69D400679FEC /* InvoiceBotAutoRunnerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -386,6 +289,9 @@
 		31FDE6462AC8D23600FBEF4E /* InvoiceBot */ = {
 			isa = PBXGroup;
 			children = (
+				3173C2C22B52B48300FBE551 /* today_is_last_working_day.sh */,
+				3173C2BF2B52B3B900FBE551 /* last_working_day.sh */,
+				3173C2BE2B52B3B900FBE551 /* test_last_working_day.sh */,
 				312D0ECA2B4D8221003D7FF3 /* Config-Dev.plist */,
 				312D0EC92B4D8221003D7FF3 /* Config-Prod.plist */,
 				3197EC8B2B3E366E0040E9D6 /* Assets */,
@@ -453,41 +359,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		31D63FC42B4C69D200679FEC /* InvoiceBotAutoRunner */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 31D63FED2B4C69D400679FEC /* Build configuration list for PBXNativeTarget "InvoiceBotAutoRunner" */;
-			buildPhases = (
-				31D63FC12B4C69D200679FEC /* Sources */,
-				31D63FC22B4C69D200679FEC /* Frameworks */,
-				31D63FC32B4C69D200679FEC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = InvoiceBotAutoRunner;
-			productName = InvoiceBotAutoRunner;
-			productReference = 31D63FC52B4C69D200679FEC /* InvoiceBotAutoRunner.app */;
-			productType = "com.apple.product-type.application";
-		};
-		31D63FD42B4C69D400679FEC /* InvoiceBotAutoRunnerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 31D63FEE2B4C69D400679FEC /* Build configuration list for PBXNativeTarget "InvoiceBotAutoRunnerTests" */;
-			buildPhases = (
-				31D63FD12B4C69D400679FEC /* Sources */,
-				31D63FD22B4C69D400679FEC /* Frameworks */,
-				31D63FD32B4C69D400679FEC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				31D63FD72B4C69D400679FEC /* PBXTargetDependency */,
-			);
-			name = InvoiceBotAutoRunnerTests;
-			productName = InvoiceBotAutoRunnerTests;
-			productReference = 31D63FD52B4C69D400679FEC /* InvoiceBotAutoRunnerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		31FDE6432AC8D23600FBEF4E /* InvoiceBot */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31FDE6692AC8D23800FBEF4E /* Build configuration list for PBXNativeTarget "InvoiceBot" */;
@@ -497,12 +368,10 @@
 				31FDE6412AC8D23600FBEF4E /* Frameworks */,
 				31FDE6422AC8D23600FBEF4E /* Resources */,
 				3AC0DFFBB35A457EA5B98E02 /* [CP] Embed Pods Frameworks */,
-				317D22032B4C7C8000576649 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				317D21FC2B4C777700576649 /* PBXTargetDependency */,
 			);
 			name = InvoiceBot;
 			productName = InvoiceBot;
@@ -558,13 +427,6 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					31D63FC42B4C69D200679FEC = {
-						CreatedOnToolsVersion = 15.0;
-					};
-					31D63FD42B4C69D400679FEC = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 31D63FC42B4C69D200679FEC;
-					};
 					31FDE6432AC8D23600FBEF4E = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -594,38 +456,22 @@
 				31FDE6432AC8D23600FBEF4E /* InvoiceBot */,
 				31FDE6542AC8D23800FBEF4E /* InvoiceBotTests */,
 				31FDE65E2AC8D23800FBEF4E /* InvoiceBotUITests */,
-				31D63FC42B4C69D200679FEC /* InvoiceBotAutoRunner */,
-				31D63FD42B4C69D400679FEC /* InvoiceBotAutoRunnerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		31D63FC32B4C69D200679FEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				31D63FCF2B4C69D400679FEC /* Preview Assets.xcassets in Resources */,
-				31D63FCC2B4C69D400679FEC /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		31D63FD32B4C69D400679FEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		31FDE6422AC8D23600FBEF4E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				31FDE64F2AC8D23800FBEF4E /* Preview Assets.xcassets in Resources */,
-				317D21FA2B4C777700576649 /* InvoiceBotAutoRunner.app in Resources */,
+				3173C2C32B52B48300FBE551 /* today_is_last_working_day.sh in Resources */,
+				3173C2C02B52B3B900FBE551 /* test_last_working_day.sh in Resources */,
 				31FDE64C2AC8D23800FBEF4E /* Assets.xcassets in Resources */,
 				312D0ECB2B4D8221003D7FF3 /* Config-Prod.plist in Resources */,
 				311DD8222B42018900D651CE /* invoice.html in Resources */,
+				3173C2C12B52B3B900FBE551 /* last_working_day.sh in Resources */,
 				312D0ECC2B4D8221003D7FF3 /* Config-Dev.plist in Resources */,
 				315EAE172AD3EEBE00011663 /* line_1_0.png in Resources */,
 			);
@@ -751,23 +597,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		31D63FC12B4C69D200679FEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				31D63FC82B4C69D200679FEC /* InvoiceBotAutoRunnerApp.swift in Sources */,
-				31D63FF62B4C6DDD00679FEC /* DateExtensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		31D63FD12B4C69D400679FEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				31D63FF72B4C6E3E00679FEC /* DateExtensionsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		31FDE6402AC8D23600FBEF4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -794,6 +623,7 @@
 				31D6A4782B19C51800858F29 /* LoginView.swift in Sources */,
 				311DD8282B44949800D651CE /* EmailUtilities.swift in Sources */,
 				31D6A47A2B19C52300858F29 /* LoginViewModel.swift in Sources */,
+				3173C2BD2B52A5EE00FBE551 /* DateExtensions.swift in Sources */,
 				31B594262B364C7E005C38CB /* FormValidator.swift in Sources */,
 				311DD8262B42284400D651CE /* InvoicePdfViewModel.swift in Sources */,
 				314924F62B25FD9400EC3111 /* Fetchable.swift in Sources */,
@@ -826,16 +656,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		317D21FC2B4C777700576649 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 31D63FC42B4C69D200679FEC /* InvoiceBotAutoRunner */;
-			targetProxy = 317D21FB2B4C777700576649 /* PBXContainerItemProxy */;
-		};
-		31D63FD72B4C69D400679FEC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 31D63FC42B4C69D200679FEC /* InvoiceBotAutoRunner */;
-			targetProxy = 31D63FD62B4C69D400679FEC /* PBXContainerItemProxy */;
-		};
 		31FDE6572AC8D23800FBEF4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 31FDE6432AC8D23600FBEF4E /* InvoiceBot */;
@@ -972,179 +792,6 @@
 				TEST_TARGET_NAME = InvoiceBot;
 			};
 			name = Production;
-		};
-		312D0EC72B4CAFA2003D7FF3 /* Production */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = InvoiceBotAutoRunner/InvoiceBotAutoRunner.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"InvoiceBotAutoRunner/Preview Content\"";
-				DEVELOPMENT_TEAM = 93PL5G8G65;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_LSBackgroundOnly = YES;
-				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotAutoRunner;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Production;
-		};
-		312D0EC82B4CAFA2003D7FF3 /* Production */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 93PL5G8G65;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotAutoRunnerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvoiceBotAutoRunner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InvoiceBotAutoRunner";
-			};
-			name = Production;
-		};
-		31D63FE72B4C69D400679FEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = InvoiceBotAutoRunner/InvoiceBotAutoRunnerDebug.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"InvoiceBotAutoRunner/Preview Content\"";
-				DEVELOPMENT_TEAM = 93PL5G8G65;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_LSBackgroundOnly = YES;
-				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotAutoRunner;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		31D63FE82B4C69D400679FEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = InvoiceBotAutoRunner/InvoiceBotAutoRunner.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"InvoiceBotAutoRunner/Preview Content\"";
-				DEVELOPMENT_TEAM = 93PL5G8G65;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_LSBackgroundOnly = YES;
-				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotAutoRunner;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		31D63FE92B4C69D400679FEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 93PL5G8G65;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotAutoRunnerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvoiceBotAutoRunner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InvoiceBotAutoRunner";
-			};
-			name = Debug;
-		};
-		31D63FEA2B4C69D400679FEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 93PL5G8G65;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kapobajza.InvoiceBotAutoRunnerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvoiceBotAutoRunner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InvoiceBotAutoRunner";
-			};
-			name = Release;
 		};
 		31FDE6672AC8D23800FBEF4E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1397,26 +1044,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31D63FED2B4C69D400679FEC /* Build configuration list for PBXNativeTarget "InvoiceBotAutoRunner" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				31D63FE72B4C69D400679FEC /* Debug */,
-				31D63FE82B4C69D400679FEC /* Release */,
-				312D0EC72B4CAFA2003D7FF3 /* Production */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		31D63FEE2B4C69D400679FEC /* Build configuration list for PBXNativeTarget "InvoiceBotAutoRunnerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				31D63FE92B4C69D400679FEC /* Debug */,
-				31D63FEA2B4C69D400679FEC /* Release */,
-				312D0EC82B4CAFA2003D7FF3 /* Production */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		31FDE63F2AC8D23600FBEF4E /* Build configuration list for PBXProject "InvoiceBot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
