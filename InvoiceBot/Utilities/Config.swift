@@ -47,8 +47,6 @@ struct Config: ConfigProtocol, Decodable {
         env = "Prod"
         #endif
 
-        print("Env \(env)")
-
         guard let url = Bundle.main.url(forResource: "Config-\(env)", withExtension: "plist") else {
             throw ConfigError.missingFile
         }

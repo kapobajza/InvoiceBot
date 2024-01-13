@@ -57,7 +57,7 @@ class InvoicePdfViewModel: CancellableViewModel {
                                         subject: "Invoice \(month)/\(year)",
                                         body: MSEmailBody(
                                             contentType: "Text",
-                                            content: "This message is auto-generated.\n\nBest regards, Faruk"
+                                            content: "Hello,\n I am sending you the invoice for this month in the attachments.\nThis message is auto-generated.\n\nBest regards, Faruk"
                                         ),
                                         toRecipients: emailRecipient.to,
                                         ccRecipients: emailRecipient.cc,
