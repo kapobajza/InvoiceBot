@@ -42,7 +42,7 @@ struct Invoice: Decodable, Encodable {
     }
 }
 
-struct InvoiceFormViewDTO: RouteParams {
+struct InvoiceFormViewDTO: RouteParams, Equatable {
     var invoiceNumber: String = ""
     var fiscalNumber: String = ""
     var amountEuro: String = ""

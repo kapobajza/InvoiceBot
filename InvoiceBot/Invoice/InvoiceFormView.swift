@@ -4,7 +4,6 @@ enum InvoiceFormField: String {
     case invoiceNumber
     case invoiceFiscalNumber
     case invoiceAmountEuro
-    case invoiceAmountKM
 }
 
 struct InvoiceFormView: StackNavigationView {
@@ -13,11 +12,18 @@ struct InvoiceFormView: StackNavigationView {
     @EnvironmentObject var navigationStack: NavigationStack
 
     @StateObject private var formValidator = FormValidator(instance: [
-        InvoiceFormField.invoiceNumber.rawValue: FormValidationOptions(title: "Invoice number", validator: .number),
-        InvoiceFormField.invoiceFiscalNumber.rawValue: FormValidationOptions(title: "Invoice fiscal number", validator: .number),
-        InvoiceFormField.invoiceAmountEuro.rawValue: FormValidationOptions(title: "Invoice amount in Euro", validator: .decimal),
-        InvoiceFormField.invoiceAmountKM.rawValue: FormValidationOptions(title: "Invoice amount in KM", validator: .decimal),
+        InvoiceFormField.invoiceNumber.rawValue: FormValidationOptions(
+            title: "Invoice number", validator: .number
+        ),
+        InvoiceFormField.invoiceFiscalNumber.rawValue: FormValidationOptions(
+            title: "Invoice fiscal number", validator: .number
+        ),
+        InvoiceFormField.invoiceAmountEuro.rawValue: FormValidationOptions(
+            title: "Invoice amount in Euro", validator: .decimal
+        ),
     ])
+
+    @State private var invoiceAmountKM: String = ""
 
     var body: some View {
         VStack {
@@ -50,15 +56,22 @@ struct InvoiceFormView: StackNavigationView {
                         field: InvoiceFormField.invoiceAmountEuro.rawValue,
                         text: $invoiceData.amountEuro
                     )
-                    ValidatingTextField(
-                        field: InvoiceFormField.invoiceAmountKM.rawValue,
-                        text: $invoiceData.amountKM
+                    TextField(
+                        "Invoice amount in KM",
+                        text: $invoiceAmountKM
                     )
-                    DatePicker("Select a Date", selection: Binding(get: {
-                        invoiceData.issueDate ?? Date()
-                    }, set: {
-                        invoiceData.issueDate = $0
-                    }), displayedComponents: .date)
+                    .disabled(true)
+                    DatePicker(
+                        "Select a Date",
+                        selection: Binding(
+                            get: {
+                                invoiceData.issueDate ?? Date()
+                            },
+                            set: {
+                                invoiceData.issueDate = $0
+                            }
+                        ), displayedComponents: .date
+                    )
 
                     Button("Generate PDF") {
                         navigationStack.push(InvoicePdfView(), params: invoiceData)
@@ -69,11 +82,26 @@ struct InvoiceFormView: StackNavigationView {
         .onAppear(perform: {
             invoiceFormViewModel.getInvoiceFormData()
         })
-        .onReceive(invoiceFormViewModel.invoiceDataFetchable.$state, perform: { val in
-            if let invoiceData = val.result {
-                self.invoiceData = invoiceData
+        .onReceive(
+            invoiceFormViewModel.invoiceDataFetchable.$state,
+            perform: { val in
+                if let invoiceData = val.result {
+                    self.invoiceData = invoiceData
+                }
             }
-        })
+        )
+        .onChange(of: invoiceData) { updatedData in
+            guard let amountEuro = Decimal(string: updatedData.amountEuro),
+                  let amountKM = NumberFormatter
+                  .amountNumberFormatter
+                  .string(from: amountEuro * 1.95583 as NSNumber)
+            else {
+                return
+            }
+
+            invoiceAmountKM = amountKM
+            invoiceData.amountKM = amountKM
+        }
         .padding()
     }
 }

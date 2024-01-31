@@ -1,6 +1,9 @@
 #!/bin/bash
 
-source ./last_working_day.sh
+# Get the directory of the script
+dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+source "$dir/last_working_day.sh"
 
 today=$(date +%Y-%m-%d)
 
