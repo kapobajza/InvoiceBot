@@ -74,6 +74,7 @@ struct InvoiceFormView: StackNavigationView {
                     )
 
                     Button("Generate PDF") {
+                        invoiceData.amountKM = invoiceAmountKM
                         navigationStack.push(InvoicePdfView(), params: invoiceData)
                     }.disabled(!formValidator.isValid)
                 }
@@ -91,16 +92,15 @@ struct InvoiceFormView: StackNavigationView {
             }
         )
         .onChange(of: invoiceData) { updatedData in
-            guard let amountEuro = Decimal(string: updatedData.amountEuro),
+            guard let amountEuro = NumberFormatter.amountNumberFormatter.number(from: updatedData.amountEuro),
                   let amountKM = NumberFormatter
                   .amountNumberFormatter
-                  .string(from: amountEuro * 1.95583 as NSNumber)
+                  .string(from: NSNumber(value: Double(truncating: amountEuro) * 1.95583))
             else {
                 return
             }
 
             invoiceAmountKM = amountKM
-            invoiceData.amountKM = amountKM
         }
         .padding()
     }

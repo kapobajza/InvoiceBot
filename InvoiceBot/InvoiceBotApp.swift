@@ -56,13 +56,41 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             granted, error in
             let currentDate = Date.now
 
-            guard let lastWorkingDayOfTheMonth = Date.getLastWorkingDayOfMonth(date: currentDate) else {
-                return
+            if let error = error {
+                fatalError("Error: \(error.localizedDescription)")
             }
 
-            let calendar = Calendar.current
+            guard let lastWorkingDayScriptPath = Bundle.main.path(forResource: "last_working_day", ofType: "sh") else {
+                fatalError("Cannot find last_working_day.sh")
+            }
 
-            if granted, calendar.component(.day, from: currentDate) == lastWorkingDayOfTheMonth {
+            let date = Date()
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            let today = formatter.string(from: date)
+
+            let process = Process()
+            process.launchPath = "/bin/sh"
+            process.arguments = [lastWorkingDayScriptPath, today, "call_function"]
+
+            let pipe = Pipe()
+            process.standardOutput = pipe
+            process.standardError = pipe
+
+            do {
+                try process.run()
+                process.waitUntilExit()
+            } catch {
+                print("An error occurred while running the shell script: \(error)")
+            }
+
+            let data = pipe.fileHandleForReading.readDataToEndOfFile()
+            let shOutput = String(data: data, encoding: .utf8)
+
+            if let shOutput = shOutput,
+               shOutput.trimmingCharacters(in: .whitespacesAndNewlines) == "true",
+               granted
+            {
                 DispatchQueue.main.async {
                     let bundleIdentifier = Bundle.main.bundleIdentifier
 
@@ -88,11 +116,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 )
 
                 UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-                return
-            }
-
-            if let error = error {
-                fatalError("Error: \(error.localizedDescription)")
             }
         }
     }

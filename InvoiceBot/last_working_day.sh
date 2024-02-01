@@ -10,10 +10,16 @@ function isLastWorkingDayOfMonth() {
             last_day=$(date -j -v-1d -f "%Y-%m-%d" "$last_day" +%Y-%m-%d)
         else
             if [[ "$last_day" == "$1" ]]; then
+                echo true
                 return 0
             else
+                echo false
                 return 1
             fi
         fi
     done
 }
+
+if [[ $2 == "call_function" ]]; then
+    isLastWorkingDayOfMonth "$1"
+fi
